@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignite Store</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css.map">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.js.map">
+  <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.min.js">
+
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div>Our mid-season sale is now on. <a href="#">Shop Phones</a> / <a href="#">Shop Watches</a></div>
+    <div>Help | My Account | 🇬🇧 United Kingdom</div>
+  </div>
+
+  <!-- Header -->
+  <header class="container">
+    <div class="logo">IGNITE</div>
+    <div class="search-box">
+      <select>
+        <option>All</option>
+        <option>Phones</option>
+        <option>Watches</option>
+      </select>
+      <input type="text" placeholder="What are you looking for?">
+      <button>🔍</button>
+    </div>
+    <div class="header-icons">
+      <span>☎ +1 (555) 123-4567</span>
+      <span>👤</span>
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Shop ▼</a>
+        <ul class="dropdown">
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Blog ▼</a>
+        <ul class="dropdown">
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Tech Reviews</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Phones</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img
+          src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/elice-moore-E--AUpYXbjM-unsplash_new.jpg?v=1714506031&width=1780"
+          alt="Slide 1" />
+        <div class="slide-text">
+          <h1>Now in Obsidian</h1>
+          <p>From $899</p>
+          <a href="#">Buy →</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/phones6.jpg?v=1743281611&width=1780"
+          alt="Slide 2" />
+        <div class="slide-text">
+          <h2>Sharp shots, <em>every</em> time.</h2>
+          <p>All new Prime Solar S24 Plus</p>
+          <a href="#">Pre-order →</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img
+          src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/omid-armin-RiIpjkAy0qI-unsplash_new2.jpg?v=1727335213&width=1780"
+          alt="Slide 3" />
+        <div class="slide-text">
+          <h2>Beautiful beats</h2>
+          <a href="#">Shop now →</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="slideshow-controls">
+      <!-- Grouped controls -->
+      <div class="controls-group">
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="slider-counter">
+          <span class="current">1</span> / <span class="total">3</span>
+        </div>
+
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <!-- Separate play/pause -->
+      <button class="play-pause"><i class="fa-solid fa-pause"></i></button>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- BESTSELLERS SECTION -->
+  <section class="bestsellers">
+    <div class="container">
+      <!-- Section title -->
+      <div class="section-head">
+        <h2 class="section-title">Bestsellers</h2>
+        <p class="section-subtitle">All your gadget and office needs, in one place.</p>
+      </div>
+
+      <!-- Product grid -->
+      <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <div class="product-badge">Refurbished</div>
+          <div class="product-img">
+            <img
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/aw3225qfbackleft2.png?v=1727681359&width=533"
+              class="default-img">
+            <img
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/aw3225qfbackleft2.png?v=1727681359&width=533"
+              class="hover-img">
+          </div>
+          <h3 class="product-title">Edge Pixa 9</h3>
+          <p class="product-vendor">Vendor: Edge</p>
+          <p class="product-price">From £602.00</p>
+          <div class="product-actions">
+            <button class="btn">Quick view</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <div class="product-badge best">Best Seller</div>
+          <div class="product-img">
+            <img
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Notebook-9-Pro-4.jpg?v=1727368439&width=533"
+              class="default-img">
+            <img
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Notebook-9-Pro-4.jpg?v=1727368439&width=533"
+              class="hover-img">
+          </div>
+          <h3 class="product-title">Aware 4K QD-OLED Monitor</h3>
+          <p class="product-vendor">Vendor: Apex</p>
+          <p class="product-price">From £903.00</p>
+          <div class="product-actions">
+            <button class="btn">Quick view</button>
+          </div>
+        </div>
+
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <div class="product-badge best">Best Seller</div>
+          <div class="product-img">
+            <img
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Pixel_8a_Obsidian_2.jpg?v=1728460969&width=533"
+              class="default-img">
+            <img
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Pixel_8a_Obsidian_2.jpg?v=1728460969&width=533"
+              class="hover-img">
+          </div>
+          <h3 class="product-title">Aware 4K QD-OLED Monitor</h3>
+          <p class="product-vendor">Vendor: Apex</p>
+          <p class="product-price">From £903.00</p>
+          <div class="product-actions">
+            <button class="btn">Quick view</button>
+          </div>
+        </div>
+
+        <!-- Product Card 4-->
+        <div class="product-card">
+          <div class="product-badge best">Best Seller</div>
+          <div class="product-img">
+            <img src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/chip6.jpg?v=1753303544&width=533"
+              class="default-img">
+            <img src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/chip6.jpg?v=1753303544&width=533"
+              class="hover-img">
+          </div>
+          <h3 class="product-title">Aware 4K QD-OLED Monitor</h3>
+          <p class="product-vendor">Vendor: Apex</p>
+          <p class="product-price">From £903.00</p>
+          <div class="product-actions">
+            <button class="btn">Quick view</button>
+          </div>
+        </div>
+
+
+        <a href="bestseller.html" class="product-card show-more-card">
+          <div class="show-more-content">
+            <h3>There's plenty more…</h3>
+            <p>Show me</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="load-video-section">
+    <div class="video-card">
+      <video class="video-bg" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/1918465/1918465-uhd_2560_1440_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">
+        <div class="video-text">
+          <!-- <h3>Load video: Water, taken on the <em>Pixa 9 Pro</em></h3> -->
+          <p>Shot on the <em>Pixa 9 Pro</em></p>
+          <button class="show-btn">Show me <i class="fa-solid fa-arrow-right"></i></button>
+
+        </div>
+        <button class="video-btn" id="playPauseBtn"><i class="fa-solid fa-pause"></i></button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="devices-section">
+    <div class="container">
+      <div class="section-text text-center">
+        <h2><strong>Engineered to perfection.</strong></h2>
+        <h2><strong>Designed for you.</strong></h2>
+        <p>Find devices that seamlessly work together throughout your day.</p>
+      </div>
+
+      <div class="buttons-row">
+        <button class="btn phones">Phones <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn watches">Watches</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- edge  -->
+  <section class="hero-scroll-section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Edge Pixa 9</h2>
+        <p class="section-subtitle">Next generation AI, at your finger tips.</p>
+      </div>
+      <div class="hero-scroll-grid">
+        <div class="hero-card">
+          <img
+            src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/phone123_030f6710-f528-4ba3-9245-e95702df243f.jpg?v=1738530702&width=1000"
+            alt="Incredible Intelligence">
+          <div class="hero-text">
+            <h3>Incredible Intelligence</h3>
+            <p>A new generation of AI, on hand</p>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/model-in-gold-fashion.jpg?v=1738531347&width=1000"
+            alt="Cutting Edge Cameras">
+          <div class="hero-text">
+            <h3>Cutting Edge Cameras</h3>
+            <p>Picture your best photos and videos</p>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/u3697118499_httpss.mj.runsikh_NkmA1E_create_a_picture_like_this_5734aeb5-7f80-478f-821c-028421f9d10c.jpg?v=1738532725&width=1000"
+            alt="Next Generation Chips">
+          <div class="hero-text">
+            <h3>Next Generation Chips</h3>
+            <p>Say hello to never before seen power</p>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/u3697118499_camping_at_night_--chaos_10_--ar_916_--stylize_0_--_d831f5d5-25a6-4bd9-b6da-cf7533498407.jpg?v=1738533665&width=1000"
+            alt="Peace of Mind">
+          <div class="hero-text">
+            <h3>Peace of Mind</h3>
+            <p>Helpful safety features.Just in case.</p>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/u3697118499_create._a_picture_like_this_--chaos_10_--ar_916_--s_ba695133-d068-4793-99ff-adf49b94863b.jpg?v=1738532584&width=1000"
+            alt="Dream Bigger">
+          <div class="hero-text">
+            <h3>Dream Bigger</h3>
+            <p>Unlock your creativity with AI-e</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+  <section class="product-comparison" style="background-color:wheat; padding:40px 0;">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center; font-size:28px; margin-bottom:30px;">
+        Which is right for you?
+      </h2>
+
+      <div class="comparison-grid" style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+
+        <!-- Product Card 1 -->
+        <div class="compare-card"
+          style="background:#fff; padding:20px; border-radius:12px; width:300px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+          data-products="prime,edge,ultra">
+
+          <!-- Product Switch -->
+          <div class="product-switch" style="margin-bottom:15px;">
+            <select style="padding:6px; border-radius:6px;">
+              <option value="prime">Prime Solar S24 Plus</option>
+              <option value="edge">Edge Pixa 9</option>
+              <option value="ultra">Prime S24 Solar Ultra</option>
+            </select>
+          </div>
+
+          <!-- Images -->
+          <div class="compare-img" style="position:relative;">
+            <img class="default-img"
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533"
+              alt="" style="width:100%; border-radius:10px; transition:opacity .3s;">
+            <img class="hover-img"
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533"
+              alt=""
+              style="width:100%; border-radius:10px; position:absolute; top:0; left:0; opacity:0; transition:opacity .3s;">
+          </div>
+
+          <!-- Title + Price -->
+          <h3 class="compare-title" style="margin:15px 0 8px; font-size:20px;">Prime Solar S24 Plus</h3>
+          <p class="compare-price" style="font-size:16px; margin-bottom:15px;">
+            Sale price <span style="color:#e67e22; font-weight:bold;">£376.00</span>
+            <del style="color:#777;">£677.00</del>
+          </p>
+
+          <!-- Specs -->
+          <ul class="compare-specs"
+            style="list-style:none; text-align:left; padding:0; font-size:15px; margin-bottom:20px;">
+            <li>📱 <b>Display:</b> 6.3" Super Retina XDR, OLED, 1440x3200px, 120Hz</li>
+            <li>⚡ <b>Performance:</b> Snapdragon 8 Gen 2, 1TB RAM, 256GB HDD</li>
+            <li>📷 <b>Camera:</b> 48MP Fusion, 48MP Ultra Wide, Telephoto, 3x Zoom</li>
+            <li>✔✔✖ <b>5 Year Warranty</b></li>
+          </ul>
+
+          <!-- Actions -->
+          <div class="compare-actions" style="display:flex; justify-content:center; gap:10px;">
+            <button class="btn buy"
+              style="background:#111; color:#fff; padding:10px 18px; border:none; border-radius:6px; cursor:pointer;">Buy</button>
+            <button class="btn learn"
+              style="background:#e67e22; color:#fff; padding:10px 18px; border:none; border-radius:6px; cursor:pointer; display:flex; align-items:center; gap:6px;">
+              Learn More ➝
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="compare-card"
+          style="background:#fff; padding:20px; border-radius:12px; width:300px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+          data-products="edge,prime,ultra">
+
+          <div class="product-switch" style="margin-bottom:15px;">
+            <select style="padding:6px; border-radius:6px;">
+              <option value="edge">Edge Pixa 9</option>
+              <option value="prime">Prime Solar S24 Plus</option>
+              <option value="ultra">Prime S24 Solar Ultra</option>
+            </select>
+          </div>
+
+          <div class="compare-img" style="position:relative;">
+            <img class="default-img"
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Pixel_8a_Obsidian_2.jpg?v=1728460969&width=533"
+              alt="" style="width:100%; border-radius:10px; transition:opacity .3s;">
+            <img class="hover-img"
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Pixel_8a_Obsidian_2.jpg?v=1728460969&width=533"
+              alt=""
+              style="width:100%; border-radius:10px; position:absolute; top:0; left:0; opacity:0; transition:opacity .3s;">
+          </div>
+
+          <h3 class="compare-title" style="margin:15px 0 8px; font-size:20px;">Edge Pixa 9</h3>
+          <p class="compare-price" style="font-size:16px; margin-bottom:15px;">
+            Regular price <span style="color:#e67e22; font-weight:bold;">£601.00</span>
+          </p>
+
+          <ul class="compare-specs"
+            style="list-style:none; text-align:left; padding:0; font-size:15px; margin-bottom:20px;">
+            <li>📱 <b>Display:</b> 6.9" Super Actua, AMOLED, 1440x3200px, 190Hz</li>
+            <li>⚡ <b>Performance:</b> Tensa G4, 16GB RAM, 512GB HDD</li>
+            <li>📷 <b>Camera:</b> 48MP Fusion + 12MP Ultra Wide, 5x Zoom</li>
+            <li>✔✔✖ <b>5 Year Warranty</b></li>
+          </ul>
+
+          <div class="compare-actions" style="display:flex; justify-content:center; gap:10px;">
+            <button class="btn buy"
+              style="background:#111; color:#fff; padding:10px 18px; border:none; border-radius:6px; cursor:pointer;">Buy</button>
+            <button class="btn learn"
+              style="background:#e67e22; color:#fff; padding:10px 18px; border:none; border-radius:6px; cursor:pointer; display:flex; align-items:center; gap:6px;">
+              Learn More ➝
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="compare-card"
+          style="background:#fff; padding:20px; border-radius:12px; width:300px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+          data-products="ultra,edge,prime">
+
+          <div class="product-switch" style="margin-bottom:15px;">
+            <select style="padding:6px; border-radius:6px;">
+              <option value="ultra">Prime S24 Solar Ultra</option>
+              <option value="edge">Edge Pixa 9</option>
+              <option value="prime">Prime Solar S24 Plus</option>
+            </select>
+          </div>
+
+          <div class="compare-img" style="position:relative;">
+            <img class="default-img"
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24ultra-titaniumgray-device-spen-front_HI-scaled.jpg?v=1727348208&width=533"
+              alt="" style="width:100%; border-radius:10px; transition:opacity .3s;">
+            <img class="hover-img"
+              src="https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24ultra-titaniumgray-device-spen-front_HI-scaled.jpg?v=1727348208&width=533"
+              alt=""
+              style="width:100%; border-radius:10px; position:absolute; top:0; left:0; opacity:0; transition:opacity .3s;">
+          </div>
+
+          <h3 class="compare-title" style="margin:15px 0 8px; font-size:20px;">Prime S24 Solar Ultra</h3>
+          <p class="compare-price" style="font-size:16px; margin-bottom:15px;">
+            Sale price <span style="color:#e67e22; font-weight:bold;">£451.00</span>
+            <del style="color:#777;">£526.00</del>
+          </p>
+
+          <ul class="compare-specs"
+            style="list-style:none; text-align:left; padding:0; font-size:15px; margin-bottom:20px;">
+            <li>📱 <b>Display:</b> 6.1" ProMotion OLED, 1440x2560px, 90Hz</li>
+            <li>⚡ <b>Performance:</b> Exynos 2200, 16GB RAM, 512GB HDD</li>
+            <li>📷 <b>Camera:</b> 48MP Fusion + 48MP Ultra Wide + Telephoto, 2x Zoom</li>
+            <li>✔✔✖ <b>5 Year Warranty</b></li>
+          </ul>
+
+          <div class="compare-actions" style="display:flex; justify-content:center; gap:10px;">
+            <button class="btn buy"
+              style="background:#111; color:#fff; padding:10px 18px; border:none; border-radius:6px; cursor:pointer;">Buy</button>
+            <button class="btn learn"
+              style="background:#e67e22; color:#fff; padding:10px 18px; border:none; border-radius:6px; cursor:pointer; display:flex; align-items:center; gap:6px;">
+              Learn More ➝
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Image hover
+    document.querySelectorAll(".compare-img").forEach(box => {
+      const def = box.querySelector(".default-img");
+      const hov = box.querySelector(".hover-img");
+      box.addEventListener("mouseenter", () => { def.style.opacity = 0; hov.style.opacity = 1; });
+      box.addEventListener("mouseleave", () => { def.style.opacity = 1; hov.style.opacity = 0; });
+    });
+  </script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- carous -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".next-btn", // your custom button
+        prevEl: ".prev-btn", // your custom button
+      }
+    });
+    // --- Slider counter ---
+    const currentEl = document.querySelector(".slider-counter .current");
+    const totalEl = document.querySelector(".slider-counter .total");
+
+    if (currentEl && totalEl) {
+      // Get the actual number of slides (ignore Swiper's duplicate clones)
+      const totalSlides = document.querySelectorAll(
+        ".mySwiper .swiper-slide:not(.swiper-slide-duplicate)"
+      ).length;
+
+      totalEl.textContent = totalSlides; // e.g. 3
+
+      const updateCounter = () => {
+        currentEl.textContent = swiper.realIndex + 1; // realIndex gives correct slide number
+      };
+
+      // Update on init & when slide changes
+      swiper.on("init", updateCounter);
+      swiper.on("slideChange", updateCounter);
+
+      // Run once in case init already happened
+      updateCounter();
+    }
+
+
+    // --- Play / Pause button ---
+    const playPauseBtn = document.querySelector(".play-pause");
+    let isPlaying = true;
+
+    if (playPauseBtn) {
+      playPauseBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+      playPauseBtn.addEventListener("click", () => {
+        if (isPlaying) {
+          swiper.autoplay.stop();
+          playPauseBtn.innerHTML = `<i class="fa-solid fa-play"></i>`;
+        } else {
+          swiper.autoplay.start();
+          playPauseBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+        }
+        isPlaying = !isPlaying;
+      });
+    }
+  </script>
+
+
+  <!-- 🎥 Video Control -->
+  <script>
+    const video = document.querySelector('.video-bg');
+    const videoBtn = document.getElementById('playPauseBtn');
+    let videoPlaying = true;
+
+    if (video && videoBtn) {
+      videoBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`; // set default
+
+      videoBtn.addEventListener('click', () => {
+        if (videoPlaying) {
+          video.pause();
+          videoBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+        } else {
+          video.play();
+          videoBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        }
+        videoPlaying = !videoPlaying;
+      });
+    }
+  </script>
+
+  <!-- right -->
+  <script>
+    const products = {
+      prime: {
+        title: "Prime Solar S24 Plus",
+        price: 'Sale price <span>£376.00</span> <del>£677.00</del>',
+        imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+        imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+        specs: [
+          "6.3\" Super Retina XDR OLED",
+          "Snapdragon 8 Gen 2 - 1TB RAM - 256GB HDD",
+          "48MP Fusion + Ultra Wide Telephoto",
+          "5 Year Warranty"
+        ]
+      },
+      edge: {
+        title: "Edge Pixa 9",
+        price: 'Regular price <span>£601.00</span>',
+        imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+        imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+        specs: [
+          "6.9\" Super Actua AMOLED",
+          "Tensa G4 - 16GB RAM - 512GB HDD",
+          "48MP Fusion + 12MP Ultra Wide",
+          "5 Year Warranty"
+        ]
+      },
+      ultra: {
+        title: "Prime S24 Solar Ultra",
+        price: 'Sale price <span>£451.00</span> <del>£526.00</del>',
+        imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+        imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+        specs: [
+          "6.1\" OLED ProMotion",
+          "Exynos 2200 - 16GB RAM - 512GB HDD",
+          "48MP Fusion + Ultra Wide + Telephoto",
+          "5 Year Warranty"
+        ]
+      }
+    };
+
+    document.querySelectorAll(".compare-card").forEach(card => {
+      const select = card.querySelector("select");
+      const imgFront = card.querySelector(".default-img");
+      const imgBack = card.querySelector(".hover-img");
+      const title = card.querySelector(".compare-title");
+      const price = card.querySelector(".compare-price");
+      const specsList = card.querySelector(".compare-specs");
+
+      // initial fill
+      fillCard(select.value);
+
+      select.addEventListener("change", () => {
+        fillCard(select.value);
+      });
+
+      function fillCard(key) {
+        const p = products[key];
+        title.textContent = p.title;
+        price.innerHTML = p.price;
+        imgFront.src = p.imgFront;
+        imgBack.src = p.imgBack;
+
+        specsList.innerHTML = "";
+        p.specs.forEach(s => {
+          const li = document.createElement("li");
+          li.textContent = s;
+          specsList.appendChild(li);
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
