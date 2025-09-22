@@ -585,77 +585,75 @@
   </script>
 
   <!-- right -->
-  <script>
-    const products = {
-      prime: {
-        title: "Prime Solar S24 Plus",
-        price: 'Sale price <span>£376.00</span> <del>£677.00</del>',
-        imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
-        imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
-        specs: [
-          "6.3\" Super Retina XDR OLED",
-          "Snapdragon 8 Gen 2 - 1TB RAM - 256GB HDD",
-          "48MP Fusion + Ultra Wide Telephoto",
-          "5 Year Warranty"
-        ]
-      },
-      edge: {
-        title: "Edge Pixa 9",
-        price: 'Regular price <span>£601.00</span>',
-        imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
-        imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
-        specs: [
-          "6.9\" Super Actua AMOLED",
-          "Tensa G4 - 16GB RAM - 512GB HDD",
-          "48MP Fusion + 12MP Ultra Wide",
-          "5 Year Warranty"
-        ]
-      },
-      ultra: {
-        title: "Prime S24 Solar Ultra",
-        price: 'Sale price <span>£451.00</span> <del>£526.00</del>',
-        imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
-        imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
-        specs: [
-          "6.1\" OLED ProMotion",
-          "Exynos 2200 - 16GB RAM - 512GB HDD",
-          "48MP Fusion + Ultra Wide + Telephoto",
-          "5 Year Warranty"
-        ]
-      }
-    };
+<script>
+  const products = {
+    prime: {
+      title: "Prime Solar S24 Plus",
+      price: 'Sale price <span style="color:#e67e22; font-weight:bold;">£376.00</span> <del>£677.00</del>',
+      imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+      imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24plus-jadegreen-front_HI-scaled.jpg?v=1727348865&width=533",
+      specs: [
+        "📱 Display: 6.3\" Super Retina XDR OLED",
+        "⚡ Performance: Snapdragon 8 Gen 2 - 1TB RAM - 256GB HDD",
+        "📷 Camera: 48MP Fusion + Ultra Wide Telephoto",
+        "✔✔✖ 5 Year Warranty"
+      ]
+    },
+    edge: {
+      title: "Edge Pixa 9",
+      price: 'Regular price <span style="color:#e67e22; font-weight:bold;">£601.00</span>',
+      imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Pixel_8a_Obsidian_2.jpg?v=1728460969&width=533",
+      imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/Pixel_8a_Obsidian_2.jpg?v=1728460969&width=533",
+      specs: [
+        "📱 Display: 6.9\" Super Actua AMOLED",
+        "⚡ Performance: Tensa G4 - 16GB RAM - 512GB HDD",
+        "📷 Camera: 48MP Fusion + 12MP Ultra Wide",
+        "✔✔✖ 5 Year Warranty"
+      ]
+    },
+    ultra: {
+      title: "Prime S24 Solar Ultra",
+      price: 'Sale price <span style="color:#e67e22; font-weight:bold;">£451.00</span> <del>£526.00</del>',
+      imgFront: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24ultra-titaniumgray-device-spen-front_HI-scaled.jpg?v=1727348208&width=533",
+      imgBack: "https://benchmark-electronics-demo.myshopify.com/cdn/shop/files/galaxy-s24ultra-titaniumgray-device-spen-front_HI-scaled.jpg?v=1727348208&width=533",
+      specs: [
+        "📱 Display: 6.1\" OLED ProMotion",
+        "⚡ Performance: Exynos 2200 - 16GB RAM - 512GB HDD",
+        "📷 Camera: 48MP Fusion + Ultra Wide + Telephoto",
+        "✔✔✖ 5 Year Warranty"
+      ]
+    }
+  };
 
-    document.querySelectorAll(".compare-card").forEach(card => {
-      const select = card.querySelector("select");
-      const imgFront = card.querySelector(".default-img");
-      const imgBack = card.querySelector(".hover-img");
-      const title = card.querySelector(".compare-title");
-      const price = card.querySelector(".compare-price");
-      const specsList = card.querySelector(".compare-specs");
+  document.querySelectorAll(".compare-card").forEach(card => {
+    const select = card.querySelector("select");
+    const imgFront = card.querySelector(".default-img");
+    const imgBack = card.querySelector(".hover-img");
+    const titleEl = card.querySelector(".compare-title");
+    const priceEl = card.querySelector(".compare-price");
+    const specsEl = card.querySelector(".compare-specs");
 
-      // initial fill
-      fillCard(select.value);
+    select.addEventListener("change", () => {
+      const value = select.value;
+      const product = products[value];
 
-      select.addEventListener("change", () => {
-        fillCard(select.value);
-      });
+      // Update title
+      titleEl.textContent = product.title;
 
-      function fillCard(key) {
-        const p = products[key];
-        title.textContent = p.title;
-        price.innerHTML = p.price;
-        imgFront.src = p.imgFront;
-        imgBack.src = p.imgBack;
+      // Update price (contains HTML, so use innerHTML)
+      priceEl.innerHTML = product.price;
 
-        specsList.innerHTML = "";
-        p.specs.forEach(s => {
-          const li = document.createElement("li");
-          li.textContent = s;
-          specsList.appendChild(li);
-        });
-      }
+      // Update images
+      imgFront.src = product.imgFront;
+      imgBack.src = product.imgBack;
+
+      // Update specs list
+      specsEl.innerHTML = product.specs.map(spec => `<li>${spec}</li>`).join("");
     });
-  </script>
+  });
+</script>
+
+
 
 </body>
 

@@ -4,6 +4,175 @@
       background: #f5f5f5;
     }
 
+    @media (max-width: 1024px) {
+
+  /* Topbar */
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  /* Header */
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .search-box {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .header-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Navbar */
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  /* Carousel */
+  .swiper {
+    height: 350px;
+  }
+
+  .slide-text {
+    top: auto;
+    bottom: 15%;
+    left: 5%;
+    transform: none;
+    max-width: 90%;
+  }
+
+  .slide-text h1, .slide-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .slide-text p {
+    font-size: 1rem;
+  }
+
+  /* Bestsellers */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    flex: 0 0 200px;
+  }
+
+  /* Video */
+  .video-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .video-text p {
+    font-size: 1.2rem;
+  }
+
+  /* Buttons Row */
+  .buttons-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width: 600px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box select,
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 6px;
+  }
+
+  /* Carousel */
+  .swiper {
+    height: 260px;
+  }
+
+  .slide-text {
+    bottom: 10%;
+    left: 5%;
+    max-width: 100%;
+  }
+
+  .slide-text h1, .slide-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .slide-text p {
+    font-size: 0.9rem;
+  }
+
+  .slide-text a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  /* Product Cards */
+  .product-card {
+    flex: 0 0 160px;
+    padding: 10px;
+  }
+
+  .product-title {
+    font-size: 14px;
+    min-height: auto;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  /* Hero scroll */
+  .hero-card {
+    flex: 0 0 220px;
+    height: 380px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  /* Comparison Grid */
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-card {
+    padding: 15px;
+  }
+
+  .compare-specs li {
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
     /* Topbar */
     .topbar {
       background: #0077cc;
