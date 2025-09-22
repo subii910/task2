@@ -50,33 +50,38 @@
   </header>
 
   <!-- Navigation -->
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li>
-        <a href="#">Shop ▼</a>
-        <ul class="dropdown">
-          <li><a href="#">Phones</a></li>
-          <li><a href="#">Watches</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Blog ▼</a>
-        <ul class="dropdown">
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Tech Reviews</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Phones</a></li>
-      <li><a href="#">Brands</a></li>
-      <li><a href="#">Deals</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Our Services</a></li>
-      <li><a href="#">FAQs</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+ <nav>
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Shop ▼</a>
+      <ul class="dropdown">
+        <li><a href="#">Phones</a></li>
+        <li><a href="#">Watches</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Blog ▼</a>
+      <ul class="dropdown">
+        <li><a href="#">Latest News</a></li>
+        <li><a href="#">Tech Reviews</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Phones</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Deals</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">FAQs</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
 
   <!-- Hero Section -->
   <div class="swiper mySwiper container">
@@ -652,6 +657,44 @@
     });
   });
 </script>
+
+<!-- nav -->
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  // Toggle main menu
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // icon bhi change kare (bars <-> times)
+    menuToggle.innerHTML = navLinks.classList.contains("active")
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  // Mobile dropdown toggle (open + close)
+  document.querySelectorAll(".nav-links > li > a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      const parent = link.parentElement;
+      const dropdown = parent.querySelector(".dropdown");
+
+      if (dropdown && window.innerWidth <= 768) {
+        e.preventDefault();
+
+        // pehle sab close karo
+        document.querySelectorAll(".nav-links li.open").forEach(openLi => {
+          if (openLi !== parent) {
+            openLi.classList.remove("open");
+          }
+        });
+
+        // current li ko toggle karo
+        parent.classList.toggle("open");
+      }
+    });
+  });
+</script>
+
 
 
 
